@@ -14,11 +14,19 @@ export const Home: React.FC = () => {
     <div>
       <h1>Home</h1>
       <p>
-        <Button variant="primary" onClick={() => dispatch(increment())}>
+        <Button
+          id="increment"
+          variant="primary"
+          onClick={() => dispatch(increment())}
+        >
           +
         </Button>
-        <span> {count} </span>
-        <Button variant="primary" onClick={() => dispatch(decrement())}>
+        <span id="count"> {count} </span>
+        <Button
+          id="decreament"
+          variant="primary"
+          onClick={() => dispatch(decrement())}
+        >
           -
         </Button>
       </p>
